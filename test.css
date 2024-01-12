@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'ChangaOne';
+    src: url('assets/fonts/ChangaOne.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('assets/fonts/OpenSans.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Section 1 */
+.background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url('assets/images/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section {display: flex;align-items: center;height: 100vh;width: 100%;}
+section img {height: 100%;width: 100%;object-fit: cover;}
+section .left-column,section .right-column {display:flex;flex-direction:column;align-items:left;height:100%;width:50%;}
+
+
+.left-column {
+    width: 50%;
+    height: 100%;
+    background-color: #051528;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {font-size: 50px; font-family: 'ChangaOne'; padding-bottom: 30px; padding-left: 5%;}
+
+p {
+    font-family: OpenSans;
+    font-size: 20px;
+    width: 60%;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    padding-left: 5%;
+}
+
+/* Section 2 */
+.section__2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.section__2 img {
+    display: none;
+    max-height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ... (continue with other sections) */

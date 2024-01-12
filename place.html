@@ -5,22 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un lieu</title>
-    <style>
-        @font-face {
-            font-family: 'ChangaOne';
-            src: url('/assets/fonts/ChangaOne.ttf');
-        }
-
-        @font-face {
-            font-family: 'OpenSans';
-            src: url('/assets/fonts/OpenSans.ttf');
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
@@ -28,28 +13,30 @@
     </header>
     <main>
         <div
-            style="width: 100%; height: 100vh; display: flex; background-image: url('/assets/images/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.jpg'); background-size: cover; background-position: center;">
+            style="width: 100%; height: 100vh; display: flex; background-image: url('assets/images/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.jpg'); background-size: cover; background-position: center;">
         </div>
-        <div style="width: 100%; height: 100vh; display: flex;">
-            <div
-                style="width: 50%; height: 100%; background-color: #051528; color: white; display: flex; justify-content: center; flex-direction: column;">
-                <h2 style="font-size: 50px; font-family: 'ChangaOne'; padding-bottom: 30px; padding-left: 5%;">UN LIEU
+        <section class="section">
+            <div class="left-column">
+                <h2>
+                    UN LIEU
                 </h2>
-                <p
-                    style="font-family: OpenSans; font-size: 20px; width: 60%; letter-spacing: 2px; line-height: 2.5; padding-left: 5%;">
+                <p>
                     Univers singulier, identitaire et façonné par l'homme. Essences de bois brulé, pierre de Savoie et
-                    cristal taillé, la salle, apaisante et épurée, accueille l'authentique transparence réconfort</p>
+                    cristal taillé, la salle, apaisante et épurée, accueille l'authentique transparence réconfort
+                </p>
             </div>
-            <img class="carousel-image" loading="lazy"
-                src="/assets/images/b5c82a2d-5a2a-4016-8538-61502f0de152_le+clos+des+sens+juin+2022+salle-7.jpg"
+            <div class="right-column">
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/b5c82a2d-5a2a-4016-8538-61502f0de152_le+clos+des+sens+juin+2022+salle-7.jpg"
                 style="display: none; max-height: 100%; max-width: 50%; object-fit: cover; object-position: center;" />
-            <img class="carousel-image" loading="lazy"
-                src="/assets/images/5b6fc94a-4d75-45d7-95c4-4f55bc8f0808_CLOS-DES-SENS-MATTHIEU-CELLARD-SALLE-85.jpg"
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/5b6fc94a-4d75-45d7-95c4-4f55bc8f0808_CLOS-DES-SENS-MATTHIEU-CELLARD-SALLE-85.jpg"
                 style="display: none; max-height: 100%; max-width: 50%; object-fit: cover; object-position: center;" />
-            <img class="carousel-image" loading="lazy"
-                src="/assets/images/8fd2bef8-dfe4-4d32-a736-156b717ec19a_CLOS-DES-SENS-MATTHIEU-CELLARD-SALLE-17.jpg"
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/8fd2bef8-dfe4-4d32-a736-156b717ec19a_CLOS-DES-SENS-MATTHIEU-CELLARD-SALLE-17.jpg"
                 style="display: none; max-height: 100%; max-width: 50%; object-fit: cover; object-position: center;" />
-        </div>
+            </div>
+        </section>
         <script>
             let carouselImages = document.getElementsByClassName('carousel-image');
             let currentImage = 0;
@@ -64,37 +51,31 @@
                 console.log(currentImage);
             }, 5000);
         </script>
-        <div style="width: 100%; height: 100vh; display: flex;">
-            <img src="/assets/images/b1abc358-daf3-4021-bb31-a9172bce7322_clos-des-sens-juillet-2023-jardin-115.jpg"
-                style="width: 50%; max-height: 100%; max-width: 50%; object-fit: cover; object-position: center;" />
-            <div
-                style="width: 50%; height: 100%; background-color: #051528; color: white; display: flex; justify-content: center; flex-direction: column;">
-                <h2 style="font-size: 50px; font-family: 'ChangaOne'; padding-bottom: 30px; padding-left: 5%;">LE JARDIN
-                </h2>
-                <p
-                    style="font-family: OpenSans; font-size: 20px; width: 60%; letter-spacing: 2px; line-height: 2.5; padding-left: 5%;">
+        <section class="section">
+            <div class="right-column">
+                <img src="assets/images/b1abc358-daf3-4021-bb31-a9172bce7322_clos-des-sens-juillet-2023-jardin-115.jpg" />
+            </div>
+            <div class="left-column">
+                <h2>LE JARDIN</h2>
+                <p>
                     L'inspiration quotidienne, dans son jus, le végétal s'exprime au gré du temps, dans ses moindres
-                    mouvements, discret ou profus, libre d'être soi.</p>
+                    mouvements, discret ou profus, libre d'être soi.
+                </p>
             </div>
-        </div>
-        <div style="width: 100%; height: 100vh; display: flex;">
-            <div style="width: 50%;">
-                <div
-                    style="width: 100%; height: 50%; background-color: #051528; color: white; display: flex; justify-content: center; flex-direction: column; padding-left: 5%; padding-right: 5%; padding-top: 5%; padding-bottom: 5%;">
-                    <h2 style="font-size: 50px; font-family: 'ChangaOne'; padding-bottom: 30px; padding-left: 5%;">
-                        ESPRITS ENGAGÉS</h2>
-                    <p
-                        style="font-family: OpenSans; font-size: 20px; width: 60%; letter-spacing: 2px; line-height: 2.5; padding-left: 5%;">
-                        Epouser une identité unique, pousser jusqu'à l'ultime sa passion sensible et émotionnelle,
-                        curieuse et libre d'être.</p>
-                </div>
-                <img src="/assets/images/5bd53ac1-96ee-4427-839b-c0be530129cd_clos-des-sens-juillet-2023-reception-24.jpg"
+        </section>
+        <section class="section">
+            <div class="left-column">
+                <h2>ESPRITS ENGAGÉS</h2>
+                <p>Epouser une identité unique, pousser jusqu'à l'ultime sa passion sensible et émotionnelle,
+                    curieuse et libre d'être.</p>
+            </div>
+            <div class="right-column">
+                <img src="assets/images/5bd53ac1-96ee-4427-839b-c0be530129cd_clos-des-sens-juillet-2023-reception-24.jpg"/>
+            </div>
+            <!-- <div style="width: 50%;">
+                <img src="assets/images/4970617a-515c-4696-a557-ca6e935aac64_Franck-Derouet_08.jpg"
                     style="width: 100%; object-fit: cover; object-position: center;" />
-            </div>
-            <div style="width: 50%;">
-                <img src="/assets/images/4970617a-515c-4696-a557-ca6e935aac64_Franck-Derouet_08.jpg"
-                    style="width: 100%; object-fit: cover; object-position: center;" />
-            </div>
+            </div> -->
         </div>
     </main>
     <footer>
