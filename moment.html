@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <section class="one">
-            <video class="video" autoplay loop muted>
+            <video class="video" autoplay loop muted loading="lazy">
                 <source src="assets/video2.mp4" type="video/mp4">
             </video>
         </section>
@@ -31,10 +31,10 @@
             <div class="split rightImg">
                 <div class="centered">
                     <div class="containerImg">
-                        <img class="img i1" src="assets/picture1.jpg" alt="Image 1">
-                        <img class="img i2" src="assets/picture2.jpg" alt="Image 2">
-                        <img class="img i3" src="assets/picture3.jpg" alt="Image 3">
-                        <img class="img i4" src="assets/picture4.jpg" alt="Image 4">
+                        <img loading="lazy" class="img i1" src="assets/picture1.jpg" alt="Image 1">
+                        <img loading="lazy" class="img i2" src="assets/picture2.jpg" alt="Image 2">
+                        <img loading="lazy" class="img i3" src="assets/picture3.jpg" alt="Image 3">
+                        <img loading="lazy" class="img i4" src="assets/picture4.jpg" alt="Image 4">
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
         <section class="three">
             <div class="split leftImg">
                 <div class="centered">
-                    <video class="video" autoplay loop muted>
+                    <video class="video" autoplay loop muted loading="lazy">
                         <source src="assets/video2.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -68,23 +68,36 @@
                             des racines locales, les cépages d’ici, écho aux<br>
                             flacons d’ailleurs, la pertinence d’une équipe<br>
                             sommelière en totale cohérence</p>
-                        <a href="assets/carte-des-vins.pdf"
-                            class="custom-button">La carte des vins</a>
+                        <a href="assets/carte-des-vins.pdf" class="custom-button">La carte des vins</a>
                     </div>
                     <div class="image-container">
-                        <img class="img i1" src="assets/picture5.png" alt="Image 5">
+                        <img loading="lazy" class="img i1" src="assets/picture5.png" alt="Image 5">
                     </div>
                 </div>
             </div>
 
-
             <div class="split rightImg">
-                <!-- <div class="centered"> -->
-                <img class="img i1" src="assets/picture6.jpg" alt="Image 6">
-                <!-- </div> -->
+                <img loading="lazy" class="img i1" src="assets/picture6.jpg" alt="Image 6">
             </div>
         </section>
     </div>
+
+    <!-- Script javascript pour l'anim des 4 images qui grossissent -->
+    <script>
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelector('.containerImg').classList.add('active');
+                } else {
+                    document.querySelector('.containerImg').classList.remove('active');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+        const sectionTwo = document.querySelector('.two');
+        observer.observe(sectionTwo);
+    </script>
 </body>
 
 </html>
