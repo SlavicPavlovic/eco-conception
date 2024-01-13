@@ -10,8 +10,6 @@
 
 <body>
     <main>
-        <!-- TODO: mettre le carousel lent -->
-
         <div
             style="width: 100%; height: 100vh; display: flex; background-image: url('assets/images/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.jpg'); background-size: cover; background-position: center;">
             
@@ -20,15 +18,16 @@
                     <img src="assets/images/logo.svg">
                     <p style="font-family: LaBelleAurore; color: white; width: 100%; font-size: 35px;"> Le pavillon gourmand</p>
                 </div>
-                <div style="padding-right: 15px;">
-                    <a class="linkable" href="place.html">Un lieu</a>
-                    <a class="linkable" href="lien_pour_un_moment">Un moment</a>
-                    <a class="linkable" href="lien_pour_nous_trouver">Nous trouver</a>
+                <div class="linkable-container">
+                    <a class="linkable-selected" style="margin-right: 30px;" href="place.html">Un lieu</a>
+                    <a class="linkable" style="margin-right: 30px;" href="lien_pour_un_moment">Un moment</a>
+                    <a class="linkable" style="margin-right: 30px;" href="lien_pour_nous_trouver">Nous trouver</a>
                 </div>
+            </div>
             </div>
         </div>
         <section class="section">
-            <div class="text-column">
+            <div class="text-column-place">
                 <h2>
                     UN LIEU
                 </h2>
@@ -67,7 +66,7 @@
             <div class="img-column">
                 <img src="assets/images/b1abc358-daf3-4021-bb31-a9172bce7322_clos-des-sens-juillet-2023-jardin-115.jpg" />
             </div>
-            <div class="text-column">
+            <div class="text-column-place">
                 <h2>LE JARDIN</h2>
                 <p>
                     L'inspiration quotidienne, dans son jus, le végétal s'exprime au gré du temps, dans ses moindres
@@ -76,7 +75,7 @@
             </div>
         </section>
         <section class="section">
-            <div class="text-column">
+            <div class="text-column-place">
                 <h2>ESPRITS ENGAGÉS</h2>
                 <p>Epouser une identité unique, pousser jusqu'à l'ultime sa passion sensible et émotionnelle,
                     curieuse et libre d'être.</p>
