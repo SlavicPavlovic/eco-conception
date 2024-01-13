@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="moment.css" />
+    <title>Moment</title>
     <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
-    <div class="container">
-        <section class="one">
-            <video class="video" autoplay loop muted loading="lazy">
-                <source src="assets/video2.mp4" type="video/mp4">
-            </video>
-        </section>
+    <main>
+        <div style="width: 100%; height: 100vh; display: flex; background-size: cover; background-position: center;">
             <div class="top-information">
                 <div style="display: -webkit-inline-box;">
                     <img src="assets/images/logo.svg">
-                    <p style="font-family: LaBelleAurore; color: white; width: 100%; font-size: 35px;"> Le pavillon gourmand</p>
+                    <p style="font-family: LaBelleAurore; color: white; width: 100%; font-size: 35px;"> Le pavillon
+                        gourmand</p>
                 </div>
                 <div class="linkable-container">
                     <a class="linkable" style="margin-right: 30px;" href="place.html">Un lieu</a>
@@ -26,6 +23,10 @@
                     <a class="linkable" style="margin-right: 30px;" href="lien_pour_nous_trouver">Nous trouver</a>
                 </div>
             </div>
+            <video autoplay muted loop class="video">
+                <source src="assets/video2.mp4" type="video/mp4">
+            </video>
+        </div>
 
         <section class="section">
             <div class="text-column-moment">
@@ -33,90 +34,99 @@
                 <p>Reflet d’un garde-manger nourricier, la cuisine,
                     brut et authentique dessine ses lignes dans ses
                     courbes sauvages et charnelles sans contour</p>
-                    <a href="assets/menu.pdf" class="custom-button">Notre menu</a>
+                <a href="assets/menu.pdf" class="custom-button">Notre menu</a>
             </div>
             <div class="img-column">
-                <img src="assets/images/56d0c837-db50-4ce9-997f-4c9caee3087a_clos-des-sens-juillet-2023-plats-ecrevisse2.jpg" loading="lazy">
-            </div>
-            <div class="split leftText">
-                <div class="centered">
-                    <h2 class="titleMenu">ÂME VÉGÉTAL <br> ET LACUSTRE</h2>
-                    <p class="subTitleMenu">Reflet d’un garde-manger nourricier, la cuisine, <br>
-                        brut et authentique dessine ses lignes dans ses <br>
-                        courbes sauvages et charnelles sans contour</p>
+                <div class="img-container">
+                    <img class="img-item" loading="lazy" src="assets/picture1.jpg" alt="Image 1">
+                    <img class="img-item" loading="lazy" src="assets/picture2.jpg" alt="Image 2">
+                </div>
+                <div class="img-container">
+                    <img class="img-item" loading="lazy" src="assets/picture3.jpg" alt="Image 3">
+                    <img class="img-item" loading="lazy" src="assets/picture4.jpg" alt="Image 4">
                 </div>
             </div>
 
-            <div class="split rightImg">
-                <div class="centered">
-                    <div class="containerImg">
-                        <img loading="lazy" class="img i1" src="assets/picture1.jpg" alt="Image 1">
-                        <img loading="lazy" class="img i2" src="assets/picture2.jpg" alt="Image 2">
-                        <img loading="lazy" class="img i3" src="assets/picture3.jpg" alt="Image 3">
-                        <img loading="lazy" class="img i4" src="assets/picture4.jpg" alt="Image 4">
-                    </div>
-                </div>
+        </section>
+        <section class="section">
+            <div class="img-column">
+                <video class="videoLeft" src="assets/video2.mp4" autoplay muted loop loading="lazy"></video>
+            </div>
+            <div class="text-column-moment">
+                <h2>LA CUEILLETTE</h2>
+                <p>Par le prisme culinaire, entre pudeur et force vitale, le monde du vivant s'exprime jusqu'à la
+                    quintesssence. Sublimé, il livre son émotion ultime </p>
             </div>
         </section>
 
-        <section class="three">
-            <div class="split leftImg">
-                <div class="centered">
-                    <video class="video" autoplay loop muted loading="lazy">
-                        <source src="assets/video2.mp4" type="video/mp4">
-                    </video>
-                </div>
+        <section class="section">
+            <div class="text-column-moment">
+                <h2>VERRE DU TERROIR</h2>
+                <p>Explorer un territoire et rendre à la vigne la beauté
+                    des racines locales, les cépages d’ici, écho aux
+                    flacons d’ailleurs, la pertinence d’une équipe
+                    sommelière en totale cohérence</p>
+                <a href="assets/carte-des-vins.pdf" class="custom-button">La carte des vins</a>
+                <img loading="lazy" class="img i1" src="assets/picture5.png" alt="Image 5">
             </div>
-
-            <div class="split rightText">
-                <div class="centered">
-                    <h2 class="titleMenu">LA CUEILLETTE</h2>
-                    <p class="subTitleMenu">Inspiration quotidienne, dans son jus, le végétal<br>
-                        s’exprime au gré du temps, dans ses moindres<br>
-                        mouvements, discret ou profus, libre d’être soi.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="four">
-            <div class="split leftText">
-                <div class="centered flex-container">
-                    <div class="text-container">
-                        <h2 class="titleMenu">VERRE DU TERROIR</h2>
-                        <p class="subTitleMenu">Explorer un territoire et rendre à la vigne la beauté<br>
-                            des racines locales, les cépages d’ici, écho aux<br>
-                            flacons d’ailleurs, la pertinence d’une équipe<br>
-                            sommelière en totale cohérence</p>
-                        <a href="assets/carte-des-vins.pdf" class="custom-button">La carte des vins</a>
-                    </div>
-                    <div class="image-container">
-                        <img loading="lazy" class="img i1" src="assets/picture5.png" alt="Image 5">
-                    </div>
-                </div>
-            </div>
-
-            <div class="split rightImg">
+            <div class="img-column">
                 <img loading="lazy" class="img i1" src="assets/picture6.jpg" alt="Image 6">
             </div>
         </section>
-    </div>
 
-    <!-- Script javascript pour l'anim des 4 images qui grossissent -->
-    <script>
-        function handleIntersection(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    document.querySelector('.containerImg').classList.add('active');
-                } else {
-                    document.querySelector('.containerImg').classList.remove('active');
-                }
-            });
-        }
+        <footer style="background-color: #1E1E1E; border: 5px solid #1E1E1E;">
+            <div
+                style="height: 30%; display: flex; justify-content: center; align-items: center; margin-top: 5%; margin-bottom: 5%;">
+                <img src="assets/images/relais-chateaux.svg" alt="Logo 1"
+                    style="margin-right: 10%; width: 130px; height: auto;">
+                <img src="assets/images/michelin-2023.svg" alt="Logo 2"
+                    style="margin-right: 10%; width: 130px; height: auto;">
+                <img src="assets/images/gault-millau.svg" alt="Logo 3"
+                    style="margin-right: 10%; width: 130px; height: auto;">
+                <img src="assets/images/ecotable.svg" alt="Logo 4" style="width: 130px; height: auto;">
+            </div>
 
-        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-        const sectionTwo = document.querySelector('.two');
-        observer.observe(sectionTwo);
-    </script>
+            <div style="background-color: #000000; border: 5px solid #000000;">
+                <div
+                    style="height: 30%; display: flex; justify-content: space-between; align-items: center; margin-top: 15%">
+                    <div style="text-align: left; margin-left: 2%;">
+                        <p style="color: #ffffff; font-size: 10px; margin-bottom: 5px; white-space: nowrap;">Le Pavillon
+                            Gourmand</p>
+                    </div>
+                    <div style="text-align: right; margin-right: 2%;">
+                        <p style="color: #ffffff; font-size: 10px; margin-bottom: 5px; white-space: nowrap;">Mentions
+                            Légales</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script>
+            function handleIntersection(entries, observer) {
+                entries.forEach(entry => {
+                    const imgItems = document.querySelectorAll('.img-item');
+
+                    if (entry.isIntersecting) {
+                        imgItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.classList.add('active');
+                            }, index * 00);
+                        });
+                    } else {
+                        imgItems.forEach(item => {
+                            item.classList.remove('active');
+                        });
+                    }
+                });
+            }
+
+            const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+            const imgColumn = document.querySelector('.img-column');
+            observer.observe(imgColumn);
+        </script>
+
+    </main>
 </body>
 
 </html>
