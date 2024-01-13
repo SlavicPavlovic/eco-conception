@@ -62,11 +62,11 @@ section .text-column,section .img-column {display:flex;flex-direction:column;ali
 }
 
 .text-column-find {
-    background-color: #1e4310; /* Background différent pour text-column-find */
+    background-color: #1e4310;
 }
 
 .text-column-moment {
-    background-color: #311d09; /* Background différent pour text-column-moment */
+    background-color: #311d09;
 }
 
 h2 { 

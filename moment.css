@@ -146,18 +146,14 @@ section {
 
 .custom-button {
     display: inline-block;
-    padding: 10px 20px;
     font-family: "OpenSans";
-    font-size: 26px;
-    line-height: 26px;
-    letter-spacing: 0em;
+    width: 15%;
+    height: 5%;
     text-align: center;
     color: #F2F2F2;
     background-color: transparent;
     border: 2px solid #FFFFFF;
     text-decoration: none;
     position: relative;
-    left: 50px;
-    top: 50%;
     transform: translateY(-50%);
 }
