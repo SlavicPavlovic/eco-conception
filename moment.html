@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moment.css" />
+</head>
+
+<body>
+    <div class="container">
+        <section class="one">
+            <video class="video" autoplay loop muted loading="lazy">
+                <source src="assets/video2.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="two">
+            <div class="split leftText">
+                <div class="centered">
+                    <h2 class="titleMenu">ÂME VÉGÉTAL <br> ET LACUSTRE</h2>
+                    <p class="subTitleMenu">Reflet d’un garde-manger nourricier, la cuisine, <br>
+                        brut et authentique dessine ses lignes dans ses <br>
+                        courbes sauvages et charnelles sans contour</p>
+
+                    <a href="assets/menu.pdf" class="custom-button">Notre menu</a>
+
+                </div>
+            </div>
+
+            <div class="split rightImg">
+                <div class="centered">
+                    <div class="containerImg">
+                        <img loading="lazy" class="img i1" src="assets/picture1.jpg" alt="Image 1">
+                        <img loading="lazy" class="img i2" src="assets/picture2.jpg" alt="Image 2">
+                        <img loading="lazy" class="img i3" src="assets/picture3.jpg" alt="Image 3">
+                        <img loading="lazy" class="img i4" src="assets/picture4.jpg" alt="Image 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="three">
+            <div class="split leftImg">
+                <div class="centered">
+                    <video class="video" autoplay loop muted loading="lazy">
+                        <source src="assets/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="split rightText">
+                <div class="centered">
+                    <h2 class="titleMenu">LA CUEILLETTE</h2>
+                    <p class="subTitleMenu">Inspiration quotidienne, dans son jus, le végétal<br>
+                        s’exprime au gré du temps, dans ses moindres<br>
+                        mouvements, discret ou profus, libre d’être soi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="four">
+            <div class="split leftText">
+                <div class="centered flex-container">
+                    <div class="text-container">
+                        <h2 class="titleMenu">VERRE DU TERROIR</h2>
+                        <p class="subTitleMenu">Explorer un territoire et rendre à la vigne la beauté<br>
+                            des racines locales, les cépages d’ici, écho aux<br>
+                            flacons d’ailleurs, la pertinence d’une équipe<br>
+                            sommelière en totale cohérence</p>
+                        <a href="assets/carte-des-vins.pdf" class="custom-button">La carte des vins</a>
+                    </div>
+                    <div class="image-container">
+                        <img loading="lazy" class="img i1" src="assets/picture5.png" alt="Image 5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="split rightImg">
+                <img loading="lazy" class="img i1" src="assets/picture6.jpg" alt="Image 6">
+            </div>
+        </section>
+    </div>
+
+    <!-- Script javascript pour l'anim des 4 images qui grossissent -->
+    <script>
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelector('.containerImg').classList.add('active');
+                } else {
+                    document.querySelector('.containerImg').classList.remove('active');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+        const sectionTwo = document.querySelector('.two');
+        observer.observe(sectionTwo);
+    </script>
+</body>
+
+</html>

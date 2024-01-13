@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'ChangaOne';
+    src: url('text/ChangaOne.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('text/OpenSans.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.split {
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    flex: 1;
+}
+
+.leftText {
+    float: left;
+    background-color: #251715;
+    position: relative;
+}
+
+.rightImg {
+    float: right;
+    overflow: hidden;
+    background-color: #251715;
+}
+
+.leftImg {
+    float: left;
+    overflow: hidden;
+    background-color: #251715;
+}
+
+.rightText {
+    float: right;
+    background-color: #251715;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.image-container {
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.containerImg {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.containerImg .img {
+    width: 0;
+    height: 0;
+    object-fit: cover;
+    transition: width 1.3s ease-in-out, height 1.3s ease-in-out;
+}
+
+.containerImg.active .img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerImg.active .i2 {
+    transition-delay: 0.8s;
+}
+
+.containerImg.active .i3 {
+    transition-delay: 1.6s;
+}
+
+.containerImg.active .i4 {
+    transition-delay: 2.4s;
+}
+
+.i1 {
+    width: 100%;
+    height: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.titleMenu {
+    font-family: "ChangaOne";
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 50px;
+    margin-bottom: -10px;
+    color: #F2F2F2;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+.subTitleMenu {
+    font-family: "OpenSans";
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 50px;
+    color: #F2F2F2;
+    top: 50%;
+    transform: translateY(-15%);
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "OpenSans";
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F2F2F2;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
