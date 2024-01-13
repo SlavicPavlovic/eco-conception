@@ -4,15 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le pavillon gourmant</title>
+    <title>Le pavillon gourmand</title>
     <link rel="stylesheet" href="test.css">
-
-    <!-- icons library -->
-    <script src="https://kit.fontawesome.com/a980e88be8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
+
+
+        <div
+            style="width: 100%; height: 100vh; display: flex; background-image: url('assets/images/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.jpg'); background-size: cover; background-position: center;">
+            
+            <div class="top-information">
+                <div style="display: -webkit-inline-box;">
+                    <img src="assets/images/logo.svg">
+                    <p style="font-family: LaBelleAurore; color: white; width: 100%; font-size: 35px;"> Le pavillon gourmand</p>
+                </div>
+                <div style="padding-right: 15px;">
+                    <a class="linkable" href="place.html">Un lieu</a>
+                    <a class="linkable" href="lien_pour_un_moment">Un moment</a>
+                    <a class="linkable" href="lien_pour_nous_trouver">Nous trouver</a>
+                </div>
+            </div>
+            <div class="body-information">
+                RESTAURANT GASTRONOMIQUE VÉGÉTAL & LACUSTRE 3* MICHELIN ANNECY
+            </div>
+        </div>
+
+
         <div class="carousel">
             <div class="carousel_items">
                 <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img1.jpg');"></div>
@@ -25,13 +44,13 @@
         </div>
 
         <section class="section">
-            <div class="left-column">
-                <h2>Un lieu</h2>
+            <div class="text-column">
+                <h2>UN LIEU</h2>
                 <p>Univers singulier, identitaire et façonnée par l'Homme.
                     Essences de bois brulé, pierre de savoir et cristal taillé, la salle,
                     apaisante et épurée, accueille l'authentique transparence réconfort</p>
             </div>
-            <div class="right-column">
+            <div class="img-column">
                 <div class="carousel">
                     <div class="carousel_items">
                         <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img1.jpg');"></div>
@@ -45,20 +64,20 @@
             </div>
         </section>
         <section class="section">
-            <div class="left-column">
-                <img src="images/img3.jpg" alt="">
+            <div class="img-column">
+                <img src="images/img3.jpg" loading="lazy">
             </div>
-            <div class="right-column">
-                <h2>Un moment</h2>
+            <div class="text-column">
+                <h2>UN MOMENT</h2>
                 <p>Par le prisme culinaire, entre pudeur et force vitale, le monde du vivant s'exprime jusqu'à la quintesssence. Sublimé, il livre son émotion ultime   </p>
             </div>
         </section>
         <section class="section">
-            <div class="left-column">
-                <h2>Nous trouver<h2>
-                <p>Un lieu unique dans un écrin de nature</p>
+                <div class="text-column">
+                <h2>NOUS TROUVER</h2>
+                <p>Un lieu unique dans un écrin de nature.</p>
             </div>
-            <div class="right-column">
+            <div class="img-column">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10496.063412461195!2d2.343785324513035!3d48.8769743313523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e48c5018683%3A0x4d3be5d6a3b287a0!2sMus%C3%A9e%20de%20la%20Vie%20Romantique!5e0!3m2!1sen!2sfr!4v1705000306310!5m2!1sen!2sfr"
                     width="100%"
