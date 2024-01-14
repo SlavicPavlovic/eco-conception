@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un lieu</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="template.css">
+    <script src="scripts/carousel.js" defer="true"></script>
 </head>
-
 <body>
     <main>
         <div
             style="width: 100%; height: 100vh; display: flex; background-image: url('assets/images/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.jpg'); background-size: cover; background-position: center;">
-            
             <div class="top-information">
                 <div style="display: -webkit-inline-box;">
                     <img src="assets/images/logo.svg">
@@ -38,29 +36,15 @@
             <div class="img-column">
                 <img class="carousel-image" loading="lazy"
                 src="assets/images/b5c82a2d-5a2a-4016-8538-61502f0de152_le+clos+des+sens+juin+2022+salle-7.jpg"
-                style="display: none; max-height: 100%; max-width: 50%; object-fit: cover; object-position: center;" />
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
                 <img class="carousel-image" loading="lazy"
                 src="assets/images/5b6fc94a-4d75-45d7-95c4-4f55bc8f0808_CLOS-DES-SENS-MATTHIEU-CELLARD-SALLE-85.jpg"
-                style="display: none; max-height: 100%; max-width: 50%; object-fit: cover; object-position: center;" />
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
                 <img class="carousel-image" loading="lazy"
                 src="assets/images/8fd2bef8-dfe4-4d32-a736-156b717ec19a_CLOS-DES-SENS-MATTHIEU-CELLARD-SALLE-17.jpg"
-                style="display: none; max-height: 100%; max-width: 50%; object-fit: cover; object-position: center;" />
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
             </div>
         </section>
-        <script>
-            let carouselImages = document.getElementsByClassName('carousel-image');
-            let currentImage = 0;
-            carouselImages[currentImage].style.display = 'block';
-            setInterval(() => {
-                carouselImages[currentImage].style.display = 'none';
-                currentImage++;
-                if (currentImage >= carouselImages.length) {
-                    currentImage = 0;
-                }
-                carouselImages[currentImage].style.display = 'block';
-                console.log(currentImage);
-            }, 5000);
-        </script>
         <section class="section">
             <div class="img-column">
                 <img src="assets/images/b1abc358-daf3-4021-bb31-a9172bce7322_clos-des-sens-juillet-2023-jardin-115.jpg" />
@@ -85,26 +69,30 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer-container">
-            <img class="footer-img" src="assets/images/relais-chateaux.svg" loading="lazy" alt="Logo 1">
-            <img class="footer-img" src="assets/images/michelin-2023.svg" loading="lazy" alt="Logo 2">
-            <img class="footer-img" src="assets/images/gault-millau.svg" loading="lazy" alt="Logo 3">
-            <img class="footer-img" src="assets/images/ecotable.svg" loading="lazy" alt="Logo 4">
+    <footer style="background-color: #1E1E1E; border: 5px solid #1E1E1E;">
+        <div
+            style="height: 30%; display: flex; justify-content: center; align-items: center; margin-top: 5%; margin-bottom: 5%;">
+            <img src="assets/images/relais-chateaux.svg" alt="Logo 1"
+                style="margin-right: 10%; width: 130px; height: auto;">
+            <img src="assets/images/michelin-2023.svg" alt="Logo 2"
+                style="margin-right: 10%; width: 130px; height: auto;">
+            <img src="assets/images/gault-millau.svg" alt="Logo 3"
+                style="margin-right: 10%; width: 130px; height: auto;">
+            <img src="assets/images/ecotable.svg" alt="Logo 4" style="width: 130px; height: auto;">
         </div>
-
-        <div class="mention-container">
+        <div style="background-color: #000000; border: 5px solid #000000;">
             <div
                 style="height: 30%; display: flex; justify-content: space-between; align-items: center; margin-top: 15%">
                 <div style="text-align: left; margin-left: 2%;">
-                    <p class="mention">Le Pavillon Gourmand</p>
+                    <p style="color: #ffffff; font-size: 10px; margin-bottom: 5px; white-space: nowrap;">Le Pavillon
+                        Gourmand</p>
                 </div>
                 <div style="text-align: right; margin-right: 2%;">
-                    <p class="mention">Mentions Légales</p>
+                    <p style="color: #ffffff; font-size: 10px; margin-bottom: 5px; white-space: nowrap;">Mentions
+                        Légales</p>
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
 

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="template.css">
+    <script src="scripts/pop.js"></script>
+
 </head>
 
 <body>
@@ -14,8 +16,7 @@
             <div class="top-information">
                 <div style="display: -webkit-inline-box;">
                     <img src="assets/images/logo.svg">
-                    <p style="font-family: LaBelleAurore; color: white; width: 100%; font-size: 35px;"> Le pavillon
-                        gourmand</p>
+                    <p> Le pavillon gourmand</p>
                 </div>
                 <div class="linkable-container">
                     <a class="linkable" style="margin-right: 30px;" href="place.html">Un lieu</a>
@@ -77,13 +78,13 @@
         <footer style="background-color: #1E1E1E; border: 5px solid #1E1E1E;">
             <div
                 style="height: 30%; display: flex; justify-content: center; align-items: center; margin-top: 5%; margin-bottom: 5%;">
-                <img src="assets/images/relais-chateaux.svg" alt="Logo 1"
+                <img src="assets/images/relais-chateaux.svg" loading="lazy" alt="Logo 1"
                     style="margin-right: 10%; width: 130px; height: auto;">
-                <img src="assets/images/michelin-2023.svg" alt="Logo 2"
+                <img src="assets/images/michelin-2023.svg" loading="lazy" alt="Logo 2"
                     style="margin-right: 10%; width: 130px; height: auto;">
-                <img src="assets/images/gault-millau.svg" alt="Logo 3"
+                <img src="assets/images/gault-millau.svg" loading="lazy" alt="Logo 3"
                     style="margin-right: 10%; width: 130px; height: auto;">
-                <img src="assets/images/ecotable.svg" alt="Logo 4" style="width: 130px; height: auto;">
+                <img src="assets/images/ecotable.svg" loading="lazy" alt="Logo 4" style="width: 130px; height: auto;">
             </div>
 
             <div style="background-color: #000000; border: 5px solid #000000;">
@@ -99,9 +100,7 @@
                     </div>
                 </div>
             </div>
-
         </footer>
-
         <script>
             function handleIntersection(entries, observer) {
                 entries.forEach(entry => {
@@ -125,7 +124,6 @@
             const imgColumn = document.querySelector('.img-column');
             observer.observe(imgColumn);
         </script>
-
     </main>
 </body>
 
