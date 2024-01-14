@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le pavillon gourmand</title>
     <link rel="stylesheet" href="template.css">
+    <script src="scripts/carousel.js" defer="true"></script>
 </head>
 
 <body>
     <main>
         <div
-            style="width: 100%; height: 100vh; display: flex; background-image: url('assets/images/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.jpg'); background-size: cover; background-position: center;">
+            style="width: 100%; height: 100vh; display: flex; background-size: cover; background-position: center;">
             <div class="top-information">
                 <div style="display: -webkit-inline-box;">
                     <img src="assets/images/logo.svg">
@@ -23,23 +24,20 @@
                     <a class="linkable" style="margin-right: 30px;" href="find-us.html">Nous trouver</a>
                 </div>
             </div>
+            <img class="carousel-image" loading="lazy"
+                src="assets/images/b5c82a2d-5a2a-4016-8538-61502f0de152_le-clos-des-sens-juin-2022-salle-7.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/s-des-sens-matthieu-cellard-salle-85.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/s-des-sens-matthieu-cellard-salle-17.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
             <div class="body-information">
                 RESTAURANT GASTRONOMIQUE VÉGÉTAL & LACUSTRE 3* MICHELIN ANNECY
             </div>
+            
         </div>
-
-
-        <div class="carousel">
-            <div class="carousel_items">
-                <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img1.jpg');"></div>
-                <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img2.jpg');"></div>
-                <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img3.jpg');"></div>
-                <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img1.jpg');"></div>
-                <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img2.jpg');"></div>
-                <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img3.jpg');"></div>
-            </div>
-        </div>
-
         <section class="section">
             <div class="text-column-place">
                 <h2>UN LIEU</h2>
@@ -48,21 +46,28 @@
                     apaisante et épurée, accueille l'authentique transparence réconfort</p>
             </div>
             <div class="img-column">
-                <div class="carousel">
-                    <div class="carousel_items">
-                        <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img1.jpg');"></div>
-                        <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img2.jpg');"></div>
-                        <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img3.jpg');"></div>
-                        <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img1.jpg');"></div>
-                        <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img2.jpg');"></div>
-                        <div class="carousel_img" style="background-image: url('http://localhost:8000/images/img3.jpg');"></div>
-                    </div>
-                </div>
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/b5c82a2d-5a2a-4016-8538-61502f0de152_le-clos-des-sens-juin-2022-salle-7.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/s-des-sens-matthieu-cellard-salle-85.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/s-des-sens-matthieu-cellard-salle-17.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
             </div>
         </section>
         <section class="section">
             <div class="img-column">
-                <img src="assets/images/56d0c837-db50-4ce9-997f-4c9caee3087a_clos-des-sens-juillet-2023-plats-ecrevisse2.jpg" loading="lazy">
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/s-sens-juillet-2023-plats-ecrevisse2.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/sens-septembre-2021-plats-haricots3.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
+                <img class="carousel-image" loading="lazy"
+                src="assets/images/los-des-sens-juin-2022-plats-oxalis3.webp"
+                style="display: none; max-height: 100%; object-fit: cover; object-position: center;" />
             </div>
             <div class="text-column-moment">
                 <h2>UN MOMENT</h2>
