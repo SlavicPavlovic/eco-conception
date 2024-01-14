@@ -206,3 +206,28 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+footer {
+    background-color: #1E1E1E; border: 5px solid #1E1E1E;
+}
+
+.footer-img {
+    margin-right: 10%; width: 130px; height: auto;
+}
+
+.footer-container {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.mention-container {
+    background-color: #000000; border: 5px solid #000000;
+}
+
+.mention {
+    color: #ffffff; font-size: 10px; margin-bottom: 5px; white-space: nowrap;
+}
